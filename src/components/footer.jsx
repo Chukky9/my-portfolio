@@ -5,7 +5,7 @@ const Footer = () => {
         <React.Fragment>
             <footer>
                 <span>
-                    Created and designed by <i className="fa fa-user" aria-hidden="true"></i>Alozie Chukwuemeka <i className="fa fa-copyright" aria-hidden="true"></i>2021
+                    Created and designed by ALOZIE CHUKWUEMEKA <i className="fa fa-copyright" aria-hidden="true"></i>2021
                 </span>
             </footer>
         </React.Fragment>

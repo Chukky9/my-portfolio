@@ -1,6 +1,6 @@
 :root {
   --black: rgb(12, 12, 12);
-  --white: rgba(255, 255, 255, 0.712);
+  --white: rgba(255, 255, 255, 0.849);
   --red: #720312;
 }
 
@@ -37,7 +37,6 @@ section {
 
 p {
   font-style: italic;
-  color: var(--red);
 }
 
 li {
@@ -51,6 +50,8 @@ li {
   justify-content: center;
   align-items: center;
   height: 80vh;
+  animation: flipInX;
+  animation-duration: 1.5s;
 }
 
 .projects-section {
@@ -73,6 +74,8 @@ li {
   padding: 10px;
   border-top: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
+  animation: slideInRight;
+  animation-duration: 1s;
 }
 
 .right {
@@ -84,6 +87,8 @@ li {
   padding: 10px;
   border-top: 1px solid var(--white);
   border-bottom: 1px solid var(--white);
+  animation: slideInLeft;
+  animation-duration: 1s;
 }
 
 .contact-section {
@@ -92,6 +97,8 @@ li {
   justify-content: center;
   align-items: center;
   height: 80vh;
+  animation: bounceIn;
+  animation-duration: 2s;
 }
 
 .contact-links {
@@ -103,7 +110,7 @@ li {
   text-decoration: none;
   color: var(--white);
   font-size: 1.4rem;
-  text-shadow: 2px 2px 1px var(--red);
+  text-shadow: 3px 3px 1.5px var(--red);
 }
 
 .contact-details:hover {
@@ -118,9 +125,21 @@ li {
   align-items: center;
 }
 
+.contact-section-header > h3 {
+  text-align: center;
+}
+
+.contact-section-header > p {
+  color: var(--red);
+}
+
 footer {
   border-top: 2px solid var(--red);
   padding: 10px;
   display: flex;
   justify-content: center;
+}
+
+footer > span > i {
+  color: var(--red);
 }
