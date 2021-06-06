@@ -21,13 +21,14 @@ header {
   background-color: var(--red);
 }
 
-.header-btn {
+.nav-link,
+.nav-link:focus {
   color: var(--white);
 }
 
-.nav-link:focus,
 .nav-link:hover {
   color: var(--black);
+  transform: scale(1.05);
 }
 
 section {
@@ -60,6 +61,7 @@ li {
 
 .project-section-header {
   text-align: center;
+  text-decoration: underline;
 }
 
 .left {
@@ -107,6 +109,13 @@ li {
 .contact-details:hover {
   text-decoration: none;
   color: var(--white);
+}
+
+.contact-section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {

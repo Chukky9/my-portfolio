@@ -3,17 +3,17 @@ import React from 'react';
 const About = () => {
     return ( 
         <React.Fragment>
-            <section id="contact" className="contact-section">
-                <div class="contact-section-header">
+            <section className="contact-section">
+                <div className="contact-section-header">
                     <h2>Let's work together...</h2>
                     <p>How do you like your websites?</p>
                 </div>
-                <div class="contact-links">
-                    <a href="#" target="_blank" class="contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
-                    <a href="#" target="_blank" id="profile-link" class="contact-details"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="#" target="_blank" class="contact-details"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="#" class="contact-details"><i class="fas fa-at"></i> Send a mail</a>
-                    <a href="#" class="contact-details"><i class="fas fa-mobile-alt"></i> Call me</a>
+                <div className="contact-links">
+                    <a href="#" target="_blank" className="contact-details"><i className="fab fa-facebook-square"></i> Facebook</a>
+                    <a href="#" target="_blank" className="contact-details"><i className="fab fa-github"></i> GitHub</a>
+                    <a href="#" target="_blank" className="contact-details"><i className="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" className="contact-details"><i className="fas fa-at"></i> Send a mail</a>
+                    <a href="#" className="contact-details"><i className="fas fa-mobile-alt"></i> Call me</a>
                 </div>
             </section>
         </React.Fragment>

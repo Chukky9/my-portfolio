@@ -10,7 +10,7 @@ const Work = () => {
         <React.Fragment>
             <section>
                 <h3 className="project-section-header">These are some of my projects</h3>
-                <div id="projects" className="projects-section">
+                <div className="projects-section">
                     <div className="left">
                         <div style={style}></div>
                         <h5>This project aligns to the left</h5>

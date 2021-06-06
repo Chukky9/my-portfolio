@@ -11,7 +11,7 @@ class Header extends Component {
                     <ul className="nav nav-pills">
                     {this.props.pages.map(btn => 
                         <li className="nav-item" key={btn.id}>
-                            <button className="nav-link btn btn-light btn-lg header-btn" id={btn.id} onClick={() => {this.props.onRedirect(btn.id)}}>{btn.name}</button>
+                            <button className="nav-link btn btn-light btn-lg" id={btn.id} onClick={() => {this.props.onRedirect(btn.id)}}>{btn.name}</button>
                         </li>)}
                     </ul>
                 </header>
