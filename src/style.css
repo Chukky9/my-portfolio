@@ -1,0 +1,117 @@
+:root {
+  --black: rgb(12, 12, 12);
+  --white: rgba(255, 255, 255, 0.712);
+  --red: #720312;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 0px;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+header {
+  background-color: var(--red);
+}
+
+.header-btn {
+  color: var(--white);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--black);
+}
+
+section {
+  padding: 10px;
+}
+
+p {
+  font-style: italic;
+  color: var(--red);
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.project-section-header {
+  text-align: center;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+.right {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  border-top: 1px solid var(--white);
+  border-bottom: 1px solid var(--white);
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.contact-links {
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  padding: 10px;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 1px var(--red);
+}
+
+.contact-details:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+
+footer {
+  border-top: 2px solid var(--red);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
