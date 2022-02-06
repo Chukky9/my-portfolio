@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header renders successfully with navs 1`] = `
+<div>
+  <header
+    class="d-flex flex-wrap justify-content-end py-3 mb-6"
+  >
+    <ul
+      class="nav nav-pills"
+    >
+      <li
+        class="nav-item"
+      >
+        <button
+          class="nav-link btn btn-light btn-lg"
+          id="1"
+        >
+          Home
+        </button>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <button
+          class="nav-link btn btn-light btn-lg"
+          id="2"
+        >
+          Work
+        </button>
+      </li>
+      <li
+        class="nav-item"
+      >
+        <button
+          class="nav-link btn btn-light btn-lg"
+          id="3"
+        >
+          About
+        </button>
+      </li>
+    </ul>
+  </header>
+</div>
+`;

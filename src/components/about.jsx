@@ -1,23 +1,37 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import { logos, contactLinks } from '../data';
 
 const About = () => {
     return ( 
-        <React.Fragment>
+        <Fragment>
             <section className="contact-section">
                 <div className="contact-section-header">
-                    <h3>I am well skilled in the use of HTML, CSS, JavaScript and React. <br/>
-                    As well as offering backend services using NodeJS and ExpressJS.<br/> 
-                    Let's work together!!!</h3>
+                    <div className='tech-stack'>
+                        <h3>Tech Stack</h3>
+                        <div className='tech-logos'>
+                            {
+                                logos.map(logo => (
+                                    <div key={logo.name} className='logo-div'>
+                                        <img src={logo.logo} alt={logo.name} className='img-responsive logo-images'/>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
                     <p>How do you like your websites?</p>
                 </div>
                 <div className="contact-links">
-                    <a href="mailto:chukkyalozie@gmail.com" className="contact-details"><i className="fa fa-at"></i> Send a mail</a>
-                    <a href="tel:+2348067877325" className="contact-details"><i className="fa fa-mobile"></i> Call me</a>
-                    <a href="https://linkedin.com/in/chukwuemekaalozie" target="_blank" className="contact-details"><i className="fa fa-linkedin-square"></i> Linkedin</a>
-                    <a href="https://github.com/Chukky9" target="_blank" className="contact-details"><i className="fa fa-github"></i> GitHub</a>
+                    {
+                        contactLinks.map(link => (
+                            <a key={link.name} href={link.link} className="contact-details" 
+                                target={link.target ? link.target : undefined}>
+                                <i className={link.icon}></i> { link.name }
+                            </a>
+                        ))
+                    }
                 </div>
             </section>
-        </React.Fragment>
+        </Fragment>
      );
 }
  

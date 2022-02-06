@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders about page with images and links successfully 1`] = `
+<div>
+  <section
+    class="contact-section"
+  >
+    <div
+      class="contact-section-header"
+    >
+      <div
+        class="tech-stack"
+      >
+        <h3>
+          Tech Stack
+        </h3>
+        <div
+          class="tech-logos"
+        >
+          <div
+            class="logo-div"
+          >
+            <img
+              alt="javascript"
+              class="img-responsive logo-images"
+              src=""
+            />
+          </div>
+          <div
+            class="logo-div"
+          >
+            <img
+              alt="react"
+              class="img-responsive logo-images"
+              src=""
+            />
+          </div>
+          <div
+            class="logo-div"
+          >
+            <img
+              alt="vueJs"
+              class="img-responsive logo-images"
+              src=""
+            />
+          </div>
+          <div
+            class="logo-div"
+          >
+            <img
+              alt="nodeJs"
+              class="img-responsive logo-images"
+              src=""
+            />
+          </div>
+          <div
+            class="logo-div"
+          >
+            <img
+              alt="laravel"
+              class="img-responsive logo-images"
+              src=""
+            />
+          </div>
+        </div>
+      </div>
+      <p>
+        How do you like your websites?
+      </p>
+    </div>
+    <div
+      class="contact-links"
+    >
+      <a
+        class="contact-details"
+        href="mailto:chukkyalozie@gmail.com"
+      >
+        <i
+          class="fa fa-at"
+        />
+         
+        Send a mail
+      </a>
+      <a
+        class="contact-details"
+        href="tel:+2348067877325"
+      >
+        <i
+          class="fa fa-mobile"
+        />
+         
+        Call me
+      </a>
+      <a
+        class="contact-details"
+        href="https://linkedin.com/in/chukwuemekaalozie"
+        target="_blank"
+      >
+        <i
+          class="fa fa-linkedin-square"
+        />
+         
+        Linkedin
+      </a>
+      <a
+        class="contact-details"
+        href="https://github.com/Chukky9"
+        target="_blank"
+      >
+        <i
+          class="fa fa-github"
+        />
+         
+        GitHub
+      </a>
+    </div>
+  </section>
+</div>
+`;
