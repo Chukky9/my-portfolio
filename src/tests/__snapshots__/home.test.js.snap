@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders home page successfully 1`] = `
+<div>
+  <section
+    class="welcome-section"
+  >
+    <div
+      class="laptop-div"
+    >
+      <i
+        aria-hidden="true"
+        class="fa fa-laptop"
+      />
+    </div>
+    <h1>
+      Hello, I am Chukwuemeka
+    </h1>
+    <p>
+      "I help design and build functional and user-friendly websites for businesses and brands"
+    </p>
+  </section>
+</div>
+`;

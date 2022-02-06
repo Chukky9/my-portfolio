@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer renders successfully with correct year 1`] = `
+<div>
+  <footer>
+    <span>
+      Created and designed by ALOZIE CHUKWUEMEKA 
+      <i
+        aria-hidden="true"
+        class="fa fa-copyright"
+      >
+         
+      </i>
+       
+      2022
+    </span>
+  </footer>
+</div>
+`;

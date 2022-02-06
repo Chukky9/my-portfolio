@@ -2,6 +2,9 @@
   --black: rgb(12, 12, 12);
   --white: rgba(255, 255, 255, 0.849);
   --red: #720312;
+  --purple-1: rgb(117, 49, 138); 
+  --purple-2: rgb(219, 197, 224);
+  --grey: rgba(179, 175, 175, 0.986);
 }
 
 html {
@@ -13,16 +16,17 @@ html {
 }
 
 body {
-  background-color: var(--black);
-  color: var(--white);
+  background: linear-gradient(to bottom right, var(--white), var(--purple-2));
+  color: var(--black);
 }
 
 header {
-  background-color: var(--red);
+  background: linear-gradient(to right, var(--purple-1), var(--purple-2));
 }
 
 .nav-link {
-  color: var(--white);
+  color: var(--black);
+  transition: 0.5s ease;
 }
 
 .nav-link:focus,
@@ -46,11 +50,11 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--red);
+  color: var(--purple-1);
 }
 
 a:hover {
-  color: var(--white);
+  color: var(--black);
 }
 
 .welcome-section {
@@ -60,43 +64,44 @@ a:hover {
   align-items: center;
   height: 80vh;
   animation: flipInX;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
+}
+
+.laptop-div {
+  font-size: 5.5em;
 }
 
 .projects-section {
+  min-height: 80vh;
+}
+
+.projects {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-section-header {
   text-align: center;
 }
 
-.left {
+.project-div {
+  width: 33%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 10px;
-  padding: 10px;
-  border-top: 1px solid var(--red);
-  border-bottom: 1px solid var(--red);
-  animation: slideInRight;
-  animation-duration: 1s;
 }
 
-.right {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  border-top: 1px solid var(--red);
-  border-bottom: 1px solid var(--red);
-  animation: slideInLeft;
-  animation-duration: 1s;
+.project-desc {
+  text-align: center;
+}
+
+h4 {
+  margin: 0.5em 0;
 }
 
 .contact-section {
@@ -119,14 +124,14 @@ a:hover {
 .contact-details {
   padding: 10px;
   text-decoration: none;
-  color: var(--white);
+  color: var(--purple-1);
   font-size: 1.4rem;
-  text-shadow: 3px 3px 1.5px var(--red);
+  text-shadow: 3px 3px 1.5px var(--white);
 }
 
 .contact-details:hover {
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
 }
 
 .contact-section-header {
@@ -134,6 +139,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 
 .contact-section-header > h3 {
@@ -141,27 +147,76 @@ a:hover {
 }
 
 .contact-section-header > p {
-  color: var(--red);
+  color: var(--purple-1);
 }
 
 footer {
-  border-top: 2px solid var(--red);
+  border-top: 2px solid var(--black);
   padding: 10px;
   display: flex;
   justify-content: center;
+  height: 10vh;
+  align-items: center;
 }
 
 footer > span > i {
-  color: var(--red);
+  color: var(--black);
 }
 
 .images {
   display: block;
+  border-radius: 0.5em;
+}
+
+.image-div {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1.25em 0;
+}
+
+.tech-logos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2em;
+}
+
+.logo-div {
+  width: 75px;
+  height: 75px;
+  display: flex;
 }
 
 @media only screen and (max-width: 420px) {
   .images {
     width: 150px;
     height: 150px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .projects {
+    flex-direction: column;
+  }
+
+  .contact-section-header {
+    width: 100%;
+  }
+
+  .tech-logos {
+    padding: 1em;
   }
 }

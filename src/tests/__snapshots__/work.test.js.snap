@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`work page renders with images and links successfully 1`] = `
+<div>
+  <section
+    class="projects-section"
+  >
+    <h3
+      class="project-section-header"
+    >
+      These are some of my projects
+    </h3>
+    <div
+      class="projects"
+    >
+      <div
+        class="project-div"
+      >
+        <div
+          class="image-div"
+        >
+          <img
+            alt="Calculator App"
+            class="img-responsive images"
+            src=""
+          />
+        </div>
+        <div
+          class="project-desc"
+        >
+          <a
+            href="https://chuks-calculator.herokuapp.com/"
+            target="_blank"
+          >
+            <h4>
+              Calculator App
+            </h4>
+          </a>
+        </div>
+      </div>
+      <div
+        class="project-div"
+      >
+        <div
+          class="image-div"
+        >
+          <img
+            alt="Book Library App"
+            class="img-responsive images"
+            src=""
+          />
+        </div>
+        <div
+          class="project-desc"
+        >
+          <a
+            href="ttps://chuks-book-library.herokuapp.com/"
+            target="_blank"
+          >
+            <h4>
+              Book Library App
+            </h4>
+          </a>
+        </div>
+      </div>
+      <div
+        class="project-div"
+      >
+        <div
+          class="image-div"
+        >
+          <img
+            alt="Tic-Tac-Toe App"
+            class="img-responsive images"
+            src=""
+          />
+        </div>
+        <div
+          class="project-desc"
+        >
+          <a
+            href="https://ttt-9.herokuapp.com/"
+            target="_blank"
+          >
+            <h4>
+              Tic-Tac-Toe App
+            </h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
