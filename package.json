@@ -7,7 +7,7 @@
     "dev": "webpack serve",
     "start": "node server.js",
     "build": "webpack --mode production",
-    "test": "jest --watch --env=jsdom"
+    "test": "jest --env=jsdom"
   },
   "jest": {
     "roots": [
