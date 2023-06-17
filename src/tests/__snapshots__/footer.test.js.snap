@@ -12,7 +12,7 @@ exports[`footer renders successfully with correct year 1`] = `
          
       </i>
        
-      2022
+      2023
     </span>
   </footer>
 </div>
