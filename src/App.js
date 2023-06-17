@@ -5,26 +5,26 @@ import Work from './components/work.jsx';
 import About from './components/about.jsx';
 import Footer from './components/footer.jsx';
 
+const pages = [
+    {
+        id: 1,
+        name: "Home",
+        content: (<Home/>)
+    },
+    {
+        id: 2,
+        name: "Work",
+        content: (<Work/>)
+    },
+    {
+        id: 3,
+        name: "About",
+        content: (<About/>)
+    }
+]
+
 const App = () => {
     const [currentPage, setCurrentPage] = useState(1)
-
-    const pages = [
-        {
-            id: 1,
-            name: "Home",
-            content: (<Home/>)
-        },
-        {
-            id: 2,
-            name: "Work",
-            content: (<Work/>)
-        },
-        {
-            id: 3,
-            name: "About",
-            content: (<About/>)
-        }
-    ]
 
     const handleRedirect = page => {
         if (page !== currentPage) {

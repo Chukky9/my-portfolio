@@ -2,6 +2,7 @@
   --black: rgb(12, 12, 12);
   --white: rgba(255, 255, 255, 0.849);
   --red: #720312;
+  --neon: #39FF14;
   --purple-1: rgb(117, 49, 138); 
   --purple-2: rgb(219, 197, 224);
   --grey: rgba(179, 175, 175, 0.986);
@@ -16,22 +17,23 @@ html {
 }
 
 body {
-  background: linear-gradient(to bottom right, var(--white), var(--purple-2));
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
 }
 
 header {
-  background: linear-gradient(to right, var(--purple-1), var(--purple-2));
+  background: var(--black);
+  border-bottom: 2px solid var(--neon);
 }
 
 .nav-link {
-  color: var(--black);
+  color: var(--white);
   transition: 0.5s ease;
 }
 
 .nav-link:focus,
 .nav-link:hover {
-  color: var(--black);
+  color: var(--neon);
   transform: scale(1.05);
 }
 
@@ -50,11 +52,11 @@ li {
 
 a {
   text-decoration: none;
-  color: var(--purple-1);
+  color: var(--white);
 }
 
 a:hover {
-  color: var(--black);
+  text-shadow: 1px 1px 0.5px var(--neon);
 }
 
 .welcome-section {
@@ -76,16 +78,12 @@ a:hover {
 }
 
 .projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   padding: 2em;
-  justify-content: center;
-  align-items: center;
 }
 
 .project-section-header {
   text-align: center;
+  margin: 1em 0;
 }
 
 .project-div {
@@ -96,8 +94,12 @@ a:hover {
   align-items: center;
 }
 
-.project-desc {
-  text-align: center;
+.projects small {
+  font-size: 0.5em;
+}
+
+.projects p {
+  font-size: 0.9em;
 }
 
 h4 {
@@ -124,14 +126,14 @@ h4 {
 .contact-details {
   padding: 10px;
   text-decoration: none;
-  color: var(--purple-1);
+  color: var(--white);
   font-size: 1.4rem;
-  text-shadow: 3px 3px 1.5px var(--white);
+  text-shadow: 1px 1px 0.5px var(--neon);
 }
 
 .contact-details:hover {
   text-decoration: none;
-  color: var(--black);
+  color: var(--neon);
 }
 
 .contact-section-header {
@@ -147,11 +149,11 @@ h4 {
 }
 
 .contact-section-header > p {
-  color: var(--purple-1);
+  color: var(--white);
 }
 
 footer {
-  border-top: 2px solid var(--black);
+  border-top: 2px solid var(--neon);
   padding: 10px;
   display: flex;
   justify-content: center;
@@ -160,20 +162,22 @@ footer {
 }
 
 footer > span > i {
-  color: var(--black);
+  color: var(--white);
 }
 
 .images {
   display: block;
   border-radius: 0.5em;
+  margin: auto;
+  width: 350px;
 }
 
-.image-div {
-  width: 200px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.carousel-caption {
+  position: unset !important;
+}
+
+.carousel-indicators {
+  bottom: -20px;
 }
 
 .tech-stack {
@@ -202,8 +206,8 @@ footer > span > i {
 
 @media only screen and (max-width: 420px) {
   .images {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
   }
 }
 
